@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    ;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #008080;
+    padding: 20px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
+main {
+    margin: 100px auto 50px;
+    min-height: 60vh;
+}
+
+main form {
+    background-color: #FFFFFF;
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    margin: 10px auto 50px;
+    border-radius: 8px;
+}
+
+main form input {
+    flex: 1;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    border: none;
+    outline: none;
+    padding: 0 30px;
+    font-size: 18px;
+}
+
+::placeholder {
+    color: #3e3d3d;
+    font-size: 18px;
+}
+
+main form button {
+    height: 100%;
+    padding: 0 40px;
+    background-color: #008080;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+main form button:focus {
+    background-color: #029999;
+}
+
+#show-more-btn {
+    background-color: #008080;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    margin: 100px auto 50px;
+    display: none;
+}
+
+main #show-more-btn:focus {
+    background-color: #029999;
+}
+
+#result-div {
+    width: 80%;
+    margin: 10px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+#result-div img {
+    width: 100%;
+    height: 230px;
+}
+
+footer {
+    background-color: #008080;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    /* position: fixed; */
+    width: 100%;
+}
+
+
+/* //responsive images */
+
+
+/*on mobile*/
+
+@media only screen and (max-width:600px) {
+    header h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    #result-div {
+        grid-template-columns: 1fr;
+    }
+    main form input {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:1023px) {
+    header h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    #result-div {
+        grid-template-columns: 1fr 1fr;
+    }
+    main form input {
+        width: 100%;
+    }
+}
